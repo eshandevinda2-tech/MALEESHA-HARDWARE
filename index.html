@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maleesha Hardware - Premium Tools & Construction Materials</title>
+    <meta name="description" content="Your one-stop shop for high-quality hardware, tools, and construction materials in Sri Lanka.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#f97316', // Primary Orange
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        },
+                        dark: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                            700: '#334155',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-white font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-dark-900/90 backdrop-blur-md border-b border-gray-800" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-screwdriver-wrench text-brand-500 text-3xl"></i>
+                    <span class="font-bold text-2xl tracking-tight text-white">MALEESHA <span class="text-brand-500">HARDWARE</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-brand-500 font-medium hover:text-brand-400 transition-colors">Home</a>
+                    <a href="products.html" class="text-gray-300 hover:text-white font-medium transition-colors">Products</a>
+                    <a href="about.html" class="text-gray-300 hover:text-white font-medium transition-colors">About Us</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-white font-medium transition-colors">Contact</a>
+                </div>
+                <div>
+                   <a href="contact.html" class="hidden md:inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-brand-600 hover:bg-brand-700 transition-all hover:shadow-lg hover:shadow-brand-500/30">
+                        Get a Quote
+                    </a>
+                    <button class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center hero-bg">
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-3 rounded-full bg-brand-500/20 text-brand-500 text-sm font-bold tracking-wider mb-6 border border-brand-500/30 animate-fade-in-up">PREMIUM CONSTRUCTION MATERIALS</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Build Your Dream With <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600">Maleesha Hardware</span>
+            </h1>
+            <p class="mt-4 text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                Top-quality tools, paints, cement, and electrical equipment for professionals and DIY enthusiasts.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="products.html" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-brand-600 hover:bg-brand-700 md:py-4 md:text-lg md:px-10 transition-all shadow-lg shadow-brand-500/40 hover:scale-105">
+                    Shop Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 border border-gray-600 text-base font-medium rounded-full text-gray-300 hover:bg-gray-800 hover:text-white md:py-4 md:text-lg md:px-10 transition-all backdrop-blur-sm">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+        
+        <!-- Animated scroll down indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#features" class="text-gray-400 hover:text-brand-500 transition-colors">
+                <i class="fa-solid fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-dark-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Why Choose Us?</h2>
+                <div class="w-20 h-1 bg-brand-500 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:bg-dark-700/50 transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-brand-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-500 transition-colors duration-300">
+                        <i class="fa-solid fa-medal text-brand-500 text-2xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Premium Quality</h3>
+                    <p class="text-gray-400">We only stock the best brands ensuring durability and reliability for your projects.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:bg-dark-700/50 transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-brand-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-500 transition-colors duration-300">
+                        <i class="fa-solid fa-truck-fast text-brand-500 text-2xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Fast Delivery</h3>
+                    <p class="text-gray-400">Island-wide delivery service to get your materials to the site on time.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:bg-dark-700/50 transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-brand-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-500 transition-colors duration-300">
+                        <i class="fa-solid fa-tags text-brand-500 text-2xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Best Prices</h3>
+                    <p class="text-gray-400">Competitive pricing on all construction materials and hardware tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Preview -->
+    <section class="py-20 bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Featured Products</h2>
+                    <p class="text-gray-400">Our top picks for this month</p>
+                </div>
+                <a href="products.html" class="hidden md:flex items-center text-brand-500 hover:text-brand-400 font-medium transition-colors">
+                    View All Products <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="group bg-dark-800 rounded-2xl overflow-hidden shadow-lg border border-gray-800 hover:border-brand-500/50 transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                         <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Power Drill" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="bg-brand-600 text-white px-6 py-2 rounded-full font-medium hover:bg-brand-500 transform translate-y-4 group-hover:translate-y-0 transition-all">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-brand-500 text-xs font-bold uppercase tracking-wide mb-2">Power Tools</p>
+                        <h3 class="text-lg font-bold text-white mb-2">Heavy Duty Cordless Drill</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-white">LKR 18,500</span>
+                            <button class="w-8 h-8 rounded-full bg-dark-700 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="group bg-dark-800 rounded-2xl overflow-hidden shadow-lg border border-gray-800 hover:border-brand-500/50 transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hammer Set" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="bg-brand-600 text-white px-6 py-2 rounded-full font-medium hover:bg-brand-500 transform translate-y-4 group-hover:translate-y-0 transition-all">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-brand-500 text-xs font-bold uppercase tracking-wide mb-2">Hand Tools</p>
+                        <h3 class="text-lg font-bold text-white mb-2">Professional Hammer Set</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-white">LKR 4,200</span>
+                            <button class="w-8 h-8 rounded-full bg-dark-700 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="group bg-dark-800 rounded-2xl overflow-hidden shadow-lg border border-gray-800 hover:border-brand-500/50 transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                         <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paint Buckets" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="bg-brand-600 text-white px-6 py-2 rounded-full font-medium hover:bg-brand-500 transform translate-y-4 group-hover:translate-y-0 transition-all">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-brand-500 text-xs font-bold uppercase tracking-wide mb-2">Paints</p>
+                        <h3 class="text-lg font-bold text-white mb-2">Premium Wall Paint (10L)</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-white">LKR 12,000</span>
+                            <button class="w-8 h-8 rounded-full bg-dark-700 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product Card 4 -->
+                 <div class="group bg-dark-800 rounded-2xl overflow-hidden shadow-lg border border-gray-800 hover:border-brand-500/50 transition-all duration-300">
+                    <div class="relative overflow-hidden h-64">
+                         <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cement" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="bg-brand-600 text-white px-6 py-2 rounded-full font-medium hover:bg-brand-500 transform translate-y-4 group-hover:translate-y-0 transition-all">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-brand-500 text-xs font-bold uppercase tracking-wide mb-2">Construction</p>
+                        <h3 class="text-lg font-bold text-white mb-2">High Strength Cement</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-white">LKR 2,300</span>
+                            <button class="w-8 h-8 rounded-full bg-dark-700 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center md:hidden">
+                <a href="products.html" class="inline-flex items-center text-brand-500 hover:text-brand-400 font-medium transition-colors">
+                    View All Products <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-screwdriver-wrench text-brand-500 text-2xl"></i>
+                        <span class="font-bold text-xl tracking-tight text-white">MALEESHA <span class="text-brand-500">HARDWARE</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Building the nation with quality materials and tools.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-brand-500 transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-brand-500 transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-brand-500 transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-brand-500 transition-colors">Home</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-brand-500 transition-colors">Products</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-brand-500 transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-brand-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Categories</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-brand-500 transition-colors">Power Tools</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-brand-500 transition-colors">Paints</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-brand-500 transition-colors">Plumbing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-brand-500 transition-colors">Electrical</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i class="fa-solid fa-location-dot mt-1 text-brand-500"></i>
+                            <span>No. 123, Main Street,<br>Colombo 03, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400">
+                            <i class="fa-solid fa-phone text-brand-500"></i>
+                            <span>+94 77 123 4567</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400">
+                            <i class="fa-solid fa-envelope text-brand-500"></i>
+                            <span>info@maleeshahardware.lk</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-500 text-sm">&copy; 2024 Maleesha Hardware. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
